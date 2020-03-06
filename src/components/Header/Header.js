@@ -1,7 +1,6 @@
 import React from "react";
-import { Container } from "../GlobalStyles/globalStyles.styled";
 import { images } from "../Images/images";
-import { HeaderWrapper } from "./Header.styled";
+import { Container, HeaderWrapper } from "./Header.styled";
 import useInputValue from "../customHooks/useInputValue";
 
 const Header = () => {

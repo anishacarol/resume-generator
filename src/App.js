@@ -1,13 +1,15 @@
 import React from "react";
 // import logo from './logo.svg';
-import "./App.css";
+import { AppContainer } from "./App.styled";
 import Header from "../src/components/Header/Header";
+import Data from "../src/components/Data/Data";
 
 function App() {
   return (
-    <div className="App">
+    <AppContainer>
       <Header />
-    </div>
+      <Data />
+    </AppContainer>
   );
 }
 
