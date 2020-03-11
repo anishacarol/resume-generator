@@ -1,15 +1,20 @@
-import React from "react";
-// import logo from './logo.svg';
-import { AppContainer } from "./App.styled";
-import Header from "../src/components/Header/Header";
-import Data from "../src/components/Data/Data";
+import React, { useRef } from "react";
+import ReactToPrint from "react-to-print";
+import Resume from "../src/components/Resume/Resume";
+import "./App.scss";
 
 function App() {
+  const componentRef = useRef();
   return (
-    <AppContainer>
-      <Header />
-      <Data />
-    </AppContainer>
+    <div className="app-container">
+      <ReactToPrint
+        trigger={() => <button>Print my resume</button>}
+        content={() => componentRef.current}
+      ></ReactToPrint>
+      <div ref={componentRef}>
+        <Resume />
+      </div>
+    </div>
   );
 }
 
