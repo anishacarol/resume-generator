@@ -2,8 +2,8 @@ import React from "react";
 import IconData from "../IconData/IconData";
 
 const InnerData = ({
-  designation,
-  companyName,
+  title,
+  InstiutionName,
   calenderIcon,
   date,
   locationIcon,
@@ -12,17 +12,21 @@ const InnerData = ({
   roles
 }) => {
   return (
-    <div>
-      <h3>{designation}</h3>
-      <h4>{companyName}</h4>
-      <IconData icon={calenderIcon} iconInfo={date} />
-      <IconData icon={locationIcon} iconInfo={location} />
+    <div className="innerData-container">
+      <h3>{title}</h3>
+      <h4>{InstiutionName}</h4>
+      <div className="innerData-iconStyle">
+        <IconData icon={calenderIcon} iconInfo={date} />
+        <IconData icon={locationIcon} iconInfo={location} />
+      </div>
       <p>{subheading}</p>
-      <ul>
-        {roles.map(item => (
-          <li key={item}>{item}</li>
-        ))}
-      </ul>
+      {roles && (
+        <ul>
+          {roles.map(item => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 };

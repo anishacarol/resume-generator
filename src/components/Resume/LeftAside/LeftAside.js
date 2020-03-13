@@ -1,13 +1,12 @@
 import React from "react";
-import Heading from "../Heading/Heading";
-// import { data } from "../../../data/data";
-import Experience from "../Experience/Experience";
+import Experience from "./Experience/Experience";
+import Education from "./Education/Education";
 
 const LeftAside = () => {
   return (
     <aside className="left-aside">
       <Experience />
-      <Heading headingData="EDUCATION" />
+      <Education />
     </aside>
   );
 };

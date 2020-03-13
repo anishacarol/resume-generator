@@ -15,36 +15,43 @@ export const data = {
     {
       designation: "Frontend developer",
       companyName: "Elsoft Solution",
-      date: "",
-      subheading: "",
+      date: "04/2007 - 05/2013",
+      location: "Bangalore",
+      subheading: "Media Info",
       roles: ["dcsdvdsv", "adcfsdf", "afdesfde"]
     },
 
     {
       designation: "Frontend developer",
       companyName: "Elsoft Solution",
-      date: "",
-      subheading: "",
+      date: "04/2007 - 05/2013",
+      location: "Bangalore",
+
+      // subheading: "",
       roles: ["dcsdvdsv", "adcfsdf", "afdesfde"]
     },
     {
       designation: "Frontend developer",
       companyName: "Elsoft Solution",
-      date: "",
-      subheading: "",
+      date: "04/2007 - 05/2013",
+      location: "Bangalore",
+
+      subheading: "Media Info",
       roles: ["dcsdvdsv", "adcfsdf", "afdesfde"]
     }
   ],
-  educations: [
+  education: [
     {
       title: "Master of Computer Applications",
       instituteName: "Nesamony memorial christian college",
-      accadmicYear: 2010 - 2013
+      accadamicYear: "2010 - 2013",
+      location: "Bangalore"
     },
     {
       title: "Bachelor of Computer Science",
       instituteName: "Sathyabama University",
-      accadmicYear: 2007 - 2010
+      accadmicYear: "2007 - 2010",
+      location: "Bangalore"
     }
   ],
 
