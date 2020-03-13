@@ -6,10 +6,10 @@ const Resume = () => {
   return (
     <div className="resume-container">
       <Header />
-      <div className="data-container">
+      <main className="data-container">
         <LeftAside />
         <RightAside />
-      </div>
+      </main>
     </div>
   );
 };

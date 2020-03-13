@@ -7,27 +7,41 @@ const Header = () => {
     <div className="header-container">
       <div className="headerText-container">
         <div className="name-designation-container">
-          <h1>{data.name}</h1>
-          <p>{data.designation}</p>
+          <div className="name-container">
+            <h1>{data.aboutMe.name}</h1>
+          </div>
+          <div>
+            <p>{data.aboutMe.designation}</p>
+          </div>
         </div>
         <div className="contact-info">
           <div className="contactInfo-left">
             <div>
-              <IconData icon={data.contactIcon} iconInfo={data.contactNo} />
+              <IconData
+                icon={data.contactIcon}
+                iconInfo={data.aboutMe.contactNo}
+              />
             </div>
             <div>
-              <IconData icon={data.locationIcon} iconInfo={data.locationText} />
+              <IconData
+                icon={data.locationIcon}
+                iconInfo={data.aboutMe.location}
+              />
             </div>
           </div>
           <div className="contactInfo-right">
             <div>
-              <IconData icon={data.emailIcon} iconInfo={data.email} />
+              <IconData icon={data.emailIcon} iconInfo={data.aboutMe.email} />
             </div>
           </div>
         </div>
       </div>
       <div className="img-container">
-        <img className="person-img" src={data.personImg} alt="person"></img>
+        <img
+          className="person-img"
+          src={data.aboutMe.profileImgUrl}
+          alt="person"
+        ></img>
       </div>
     </div>
   );
