@@ -1,5 +1,5 @@
 import React from "react";
-import IconData from "../IconData/IconData";
+import IconText from "../IconText/IconText";
 
 const InnerData = ({
   title,
@@ -16,8 +16,8 @@ const InnerData = ({
       <h3>{title}</h3>
       <h4>{InstiutionName}</h4>
       <div className="innerData-iconStyle">
-        <IconData icon={calenderIcon} iconInfo={date} />
-        <IconData icon={locationIcon} iconInfo={location} />
+        <IconText iconUrl={calenderIcon} text={date} />
+        <IconText iconUrl={locationIcon} text={location} />
       </div>
       <p>{subheading}</p>
       {roles && (

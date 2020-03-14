@@ -1,47 +1,43 @@
 import React from "react";
-import { data } from "../../../data/data";
-import IconData from "../IconData/IconData";
+import IconText from "../IconText/IconText";
 
-const Header = () => {
+const Header = ({
+  contactNo,
+  name,
+  designation,
+  location,
+  email,
+  profileImgUrl
+}) => {
   return (
     <div className="header-container">
       <div className="headerText-container">
         <div className="name-designation-container">
           <div className="name-container">
-            <h1>{data.aboutMe.name}</h1>
+            <h1>{name}</h1>
           </div>
           <div>
-            <p>{data.aboutMe.designation}</p>
+            <p>{designation}</p>
           </div>
         </div>
         <div className="contact-info">
           <div className="contactInfo-left">
             <div>
-              <IconData
-                icon={data.contactIcon}
-                iconInfo={data.aboutMe.contactNo}
-              />
+              <IconText iconUrl={null} text={contactNo} />
             </div>
             <div>
-              <IconData
-                icon={data.locationIcon}
-                iconInfo={data.aboutMe.location}
-              />
+              <IconText iconUrl={null} text={location} />
             </div>
           </div>
           <div className="contactInfo-right">
             <div>
-              <IconData icon={data.emailIcon} iconInfo={data.aboutMe.email} />
+              <IconText iconUrl={null} text={email} />
             </div>
           </div>
         </div>
       </div>
       <div className="img-container">
-        <img
-          className="person-img"
-          src={data.aboutMe.profileImgUrl}
-          alt="person"
-        ></img>
+        <img className="person-img" src={profileImgUrl} alt="person"></img>
       </div>
     </div>
   );

@@ -98,7 +98,7 @@
     margin-bottom: 15px;
   }
 }
-.innerData-iconContainer {
+.innerData-iconStyle {
   display: flex;
   > div {
     margin-right: 25px;
@@ -117,7 +117,9 @@
     border: none;
   }
 }
-
+.education-container {
+  padding-left: 0;
+}
 @media print {
   body {
     margin: 50px;

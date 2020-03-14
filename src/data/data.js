@@ -40,7 +40,7 @@ export const data = {
       roles: ["dcsdvdsv", "adcfsdf", "afdesfde"]
     }
   ],
-  education: [
+  educations: [
     {
       title: "Master of Computer Applications",
       instituteName: "Nesamony memorial christian college",
@@ -50,7 +50,7 @@ export const data = {
     {
       title: "Bachelor of Computer Science",
       instituteName: "Sathyabama University",
-      accadmicYear: "2007 - 2010",
+      accadamicYear: "2007 - 2010",
       location: "Bangalore"
     }
   ],

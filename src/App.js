@@ -1,6 +1,9 @@
 import React, { useRef } from "react";
 import ReactToPrint from "react-to-print";
-import Resume from "../src/components/Resume/Resume";
+import Header from "./components/Header/Header";
+import Experience from "./components/Experience/Experience";
+import Education from "./components/Education/Education";
+import { data } from "./data/data";
 import "./App.scss";
 
 function App() {
@@ -12,7 +15,21 @@ function App() {
         content={() => componentRef.current}
       ></ReactToPrint>
       <div ref={componentRef}>
-        <Resume />
+        <div className="resume-container">
+          <Header {...data.aboutMe} />
+          <main className="data-container">
+            <aside className="left-aside">
+              <Experience experiences={data.experiences} />
+              <Education educations={data.educations} />
+            </aside>
+            <aside className="right-aside">
+              {/* <Summary />
+              <Heading headingData="SKILLS" />
+              <Heading headingData="LANGUAGES" />
+              <Heading headingData="PASSIONS" /> */}
+            </aside>
+          </main>
+        </div>
       </div>
     </div>
   );
