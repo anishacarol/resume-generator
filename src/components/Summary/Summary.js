@@ -1,13 +1,12 @@
 import React from "react";
-import Heading from "../../Heading/Heading";
-import { data } from "../../../../data/data";
+import ContentTitle from "../ContentTitle/ContentTitle";
 
-const Summary = () => {
+const Summary = ({ summary }) => {
   return (
     <section>
-      <Heading headingData="SUMMARY" />
+      <ContentTitle headingData="SUMMARY" />
       <div>
-        <p>{data.aboutMe.summary}</p>
+        <p>{summary}</p>
       </div>
     </section>
   );

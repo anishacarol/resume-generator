@@ -5,7 +5,15 @@
   margin-left: 12px;
 }
 // .resume-container {
+
 // }
+
+@media print {
+  .resume-container {
+    page-break-after: always;
+  }
+}
+
 .data-container {
   display: flex;
   justify-content: space-around;

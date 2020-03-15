@@ -56,8 +56,8 @@ export const data = {
   ],
 
   skills: [
-    { title: "Coding", skills: ["react", "es6", "sass"] },
-    { title: "Project management", skills: ["react", "es6", "sass"] }
+    { title: "Coding", skill: ["react", "es6", "sass"] },
+    { title: "Project management", skill: ["react", "es6", "sass"] }
   ],
 
   languages: [

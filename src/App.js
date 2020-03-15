@@ -3,6 +3,8 @@ import ReactToPrint from "react-to-print";
 import Header from "./components/Header/Header";
 import Experience from "./components/Experience/Experience";
 import Education from "./components/Education/Education";
+import Summary from "./components/Summary/Summary";
+import Skills from "./components/Skills/Skills";
 import { data } from "./data/data";
 import "./App.scss";
 
@@ -23,11 +25,12 @@ function App() {
               <Education educations={data.educations} />
             </aside>
             <aside className="right-aside">
-              {/* <Summary />
-              <Heading headingData="SKILLS" />
+              <Summary summary={data.aboutMe.summary} />
+              <Skills skills={data.skills} />
+              {/* <Heading headingData="SKILLS" />
               <Heading headingData="LANGUAGES" />
               <Heading headingData="PASSIONS" /> */}
-            </aside>
+            </aside>{" "}
           </main>
         </div>
       </div>
