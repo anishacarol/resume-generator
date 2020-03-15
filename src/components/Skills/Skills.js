@@ -7,7 +7,7 @@ const Skills = ({ skills }) => {
     <section>
       <ContentTitle headingData="Skills" />
 
-      <ul>
+      <ul className="skills-container">
         {skills.map((item, index) => (
           <li key={index}>
             <Skill title={item.title} skill={item.skill} />

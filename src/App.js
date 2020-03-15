@@ -7,6 +7,7 @@ import Summary from "./components/Summary/Summary";
 import Skills from "./components/Skills/Skills";
 import { data } from "./data/data";
 import "./App.scss";
+import Languages from "./components/Languages/Languages";
 
 function App() {
   const componentRef = useRef();
@@ -27,8 +28,8 @@ function App() {
             <aside className="right-aside">
               <Summary summary={data.aboutMe.summary} />
               <Skills skills={data.skills} />
-              {/* <Heading headingData="SKILLS" />
-              <Heading headingData="LANGUAGES" />
+              <Languages languages={data.languages} />
+              {/* 
               <Heading headingData="PASSIONS" /> */}
             </aside>{" "}
           </main>

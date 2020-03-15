@@ -4,9 +4,6 @@
 .app-container {
   margin-left: 12px;
 }
-// .resume-container {
-
-// }
 
 @media print {
   .resume-container {
@@ -113,6 +110,7 @@
   }
 }
 .experience-container {
+  margin-top: 10px;
   list-style: none;
   padding-left: 0;
   > li {
@@ -121,12 +119,53 @@
     margin-bottom: 10px;
   }
 
-  li:nth-child(3) {
+  li:last-child {
     border: none;
   }
 }
-.education-container {
+.education-container,
+.skills-container {
   padding-left: 0;
+}
+.skills-container {
+  margin-top: 0;
+  list-style: none;
+  h4 {
+    font-size: 18pt;
+    color: blue;
+  }
+  li {
+    border-bottom: 1px solid burlywood;
+  }
+  li:last-child {
+    border: none;
+  }
+}
+.skill-container {
+  h4 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  div {
+    padding-left: 0;
+
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 10px;
+
+    // padding: 2px 5px;
+    color: white;
+  }
+}
+.skill-item {
+  background-color: grey;
+  margin-top: 10px;
+  border: 1px solid gray;
+  margin-right: 10px;
+  line-height: 16px;
+  padding: 5px 8px;
+  border-radius: 3px;
+  text-transform: capitalize;
 }
 @media print {
   body {

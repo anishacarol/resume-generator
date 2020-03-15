@@ -1,14 +1,14 @@
 import React from "react";
 
 const Skill = ({ title, skill }) => (
-  <section>
+  <section className="skill-container">
     <h4>{title}</h4>
     <div>
-      <ul>
-        {skill.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
+      {skill.map((item, index) => (
+        <span className="skill-item" key={index}>
+          {item}
+        </span>
+      ))}
     </div>
   </section>
 );

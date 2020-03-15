@@ -56,8 +56,14 @@ export const data = {
   ],
 
   skills: [
-    { title: "Coding", skill: ["react", "es6", "sass"] },
-    { title: "Project management", skill: ["react", "es6", "sass"] }
+    {
+      title: "Coding",
+      skill: ["react", "es6", "sass", "hjkhklj", "sscdasc", "dcdacdc"]
+    },
+    {
+      title: "Project management",
+      skill: ["react", "es6", "sass", "nkmkmkm", "dcfdfv"]
+    }
   ],
 
   languages: [
