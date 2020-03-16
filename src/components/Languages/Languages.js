@@ -5,9 +5,13 @@ import Language from "./Language/Language";
 const Languages = ({ languages }) => (
   <section>
     <ContentTitle headingData="LANGUAGES" />
-    {languages.map((item, index) => (
-      <Language key={index} title={item.language} level={item.level} />
-    ))}
+    <div className="languages-wrapper">
+      {languages.map((item, index) => (
+        <div>
+          <Language key={index} title={item.language} level={item.level} />
+        </div>
+      ))}
+    </div>
   </section>
 );
 

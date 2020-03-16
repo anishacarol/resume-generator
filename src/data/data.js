@@ -67,7 +67,7 @@ export const data = {
   ],
 
   languages: [
-    { language: "English", level: 4 },
+    { language: "English", level: 5 },
     { language: "German", level: 1 }
   ],
   hobbies: ["dance", "songs"]

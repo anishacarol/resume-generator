@@ -5,7 +5,7 @@ import ContentTitle from "../ContentTitle/ContentTitle";
 const Skills = ({ skills }) => {
   return (
     <section>
-      <ContentTitle headingData="Skills" />
+      <ContentTitle headingData="SKILLS" />
 
       <ul className="skills-container">
         {skills.map((item, index) => (

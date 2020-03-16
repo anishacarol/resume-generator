@@ -153,7 +153,6 @@
     flex-flow: row wrap;
     margin-bottom: 10px;
 
-    // padding: 2px 5px;
     color: white;
   }
 }
@@ -166,6 +165,30 @@
   padding: 5px 8px;
   border-radius: 3px;
   text-transform: capitalize;
+}
+.language-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.language-level {
+  display: flex;
+}
+.language {
+  border-radius: 100%;
+  height: 23px;
+  width: 23px;
+  margin-right: 10px;
+}
+.languages-wrapper {
+  margin-top: 20px;
+  > div {
+    margin-bottom: 10px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid burlywood;
+  }
+  div:last-child {
+    border-bottom: none;
+  }
 }
 @media print {
   body {
