@@ -4,7 +4,7 @@ import ContentTitle from "../ContentTitle/ContentTitle";
 
 const Skills = ({ skills }) => {
   return (
-    <section>
+    <section className="skills-wrapper">
       <ContentTitle headingData="SKILLS" />
 
       <ul className="skills-container">

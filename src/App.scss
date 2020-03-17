@@ -18,6 +18,8 @@
 
 .header-container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .img-container {
   flex: 1;
@@ -36,16 +38,26 @@
     font-size: 22pt;
   }
   p {
-    color: blue;
-    font-size: 18pt;
     margin-top: 0;
-    margin-bottom: 10px;
+  }
+}
+.designation {
+  line-height: 10px;
+  color: rgb(0, 167, 187);
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+.summary-wrapper {
+  p {
+    color: black;
+    font-size: 16px;
   }
 }
 
 .icon-info {
   display: flex;
   margin: 0;
+  justify-content: flex-end;
 }
 .left-aside {
   flex: 1.5;
@@ -62,20 +74,23 @@
 }
 .contact-info {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   line-height: 2px;
   font-size: 10pt;
 }
 .heading-container {
+  display: inline-block;
   h2 {
     margin-bottom: 0;
+    color: rgb(0, 167, 187);
   }
   hr {
-    border: 1.5px solid #000;
+    border: 1.2px solid rgb(0, 167, 187);
     margin-top: 0;
     margin-bottom: 0;
   }
 }
+
 .innerData-container {
   h3 {
     font-size: 18pt;
@@ -86,7 +101,7 @@
     font-size: 12pt;
     margin-bottom: 0;
     margin-top: 0;
-    color: blue;
+    color: rgb(0, 167, 187);
   }
   p {
     margin-bottom: 0;
@@ -115,30 +130,22 @@
   padding-left: 0;
   > li {
     display: flex;
-    border-bottom: 1px solid burlywood;
-    margin-bottom: 10px;
-  }
-
-  li:last-child {
-    border: none;
+    margin-bottom: 5px;
   }
 }
 .education-container,
 .skills-container {
   padding-left: 0;
 }
+.skills-wrapper {
+  margin-bottom: 30px;
+}
 .skills-container {
   margin-top: 0;
   list-style: none;
   h4 {
     font-size: 18pt;
-    color: blue;
-  }
-  li {
-    border-bottom: 1px solid burlywood;
-  }
-  li:last-child {
-    border: none;
+    color: rgb(0, 167, 187);
   }
 }
 .skill-container {
@@ -157,7 +164,7 @@
   }
 }
 .skill-item {
-  background-color: grey;
+  background-color: rgb(0, 167, 187);
   margin-top: 10px;
   border: 1px solid gray;
   margin-right: 10px;
@@ -184,10 +191,6 @@
   > div {
     margin-bottom: 10px;
     padding-bottom: 12px;
-    border-bottom: 1px solid burlywood;
-  }
-  div:last-child {
-    border-bottom: none;
   }
 }
 .portfolio-wrapper {

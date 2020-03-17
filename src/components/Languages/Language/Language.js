@@ -10,14 +10,17 @@ const Language = ({ title, level }) => (
             return (
               <div
                 className="language"
-                style={{ backgroundColor: "black" }}
+                style={{ backgroundColor: "rgb(0, 167, 187)" }}
               ></div>
             );
           }
           return (
             <div
               className="language"
-              style={{ backgroundColor: "white", border: "1px solid black" }}
+              style={{
+                backgroundColor: "white",
+                border: "1px solid rgb(0, 167, 187)"
+              }}
             ></div>
           );
         })}

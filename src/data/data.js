@@ -17,7 +17,7 @@ export const data = {
       companyName: "Elsoft Solution",
       date: "04/2007 - 05/2013",
       location: "Bangalore",
-      subheading: "Media Info",
+      subheading: "Role",
       roles: ["dcsdvdsv", "adcfsdf", "afdesfde"]
     },
 
@@ -26,19 +26,9 @@ export const data = {
       companyName: "Elsoft Solution",
       date: "04/2007 - 05/2013",
       location: "Bangalore",
-
-      // subheading: "",
+      subheading: "Role",
       roles: ["dcsdvdsv", "adcfsdf", "afdesfde"]
     }
-    // {
-    //   designation: "Frontend developer",
-    //   companyName: "Elsoft Solution",
-    //   date: "04/2007 - 05/2013",
-    //   location: "Bangalore",
-
-    //   subheading: "Media Info",
-    //   roles: ["dcsdvdsv", "adcfsdf", "afdesfde"]
-    // }
   ],
   educations: [
     {

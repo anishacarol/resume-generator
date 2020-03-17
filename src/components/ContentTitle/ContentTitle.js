@@ -1,12 +1,12 @@
 import React from "react";
 
-const Heading = ({ headingData }) => {
+const ContentTitle = ({ headingData }) => {
   return (
-    <div className="heading-container">
+    <span className="heading-container">
       <h2>{headingData}</h2>
       <hr></hr>
-    </div>
+    </span>
   );
 };
 
-export default Heading;
+export default ContentTitle;

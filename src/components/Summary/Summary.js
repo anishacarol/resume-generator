@@ -1,13 +1,9 @@
 import React from "react";
-import ContentTitle from "../ContentTitle/ContentTitle";
 
 const Summary = ({ summary }) => {
   return (
-    <section>
-      <ContentTitle headingData="SUMMARY" />
-      <div>
-        <p>{summary}</p>
-      </div>
+    <section className="summary-wrapper">
+      <p>{summary}</p>
     </section>
   );
 };
