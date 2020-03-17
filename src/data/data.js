@@ -29,16 +29,16 @@ export const data = {
 
       // subheading: "",
       roles: ["dcsdvdsv", "adcfsdf", "afdesfde"]
-    },
-    {
-      designation: "Frontend developer",
-      companyName: "Elsoft Solution",
-      date: "04/2007 - 05/2013",
-      location: "Bangalore",
-
-      subheading: "Media Info",
-      roles: ["dcsdvdsv", "adcfsdf", "afdesfde"]
     }
+    // {
+    //   designation: "Frontend developer",
+    //   companyName: "Elsoft Solution",
+    //   date: "04/2007 - 05/2013",
+    //   location: "Bangalore",
+
+    //   subheading: "Media Info",
+    //   roles: ["dcsdvdsv", "adcfsdf", "afdesfde"]
+    // }
   ],
   educations: [
     {
@@ -70,5 +70,19 @@ export const data = {
     { language: "English", level: 5 },
     { language: "German", level: 1 }
   ],
+
+  portfolio: [
+    {
+      projectTitle: "xsxvcbdcd",
+      projectInfo:
+        "I'm a seasoned frontend developer with a strong sense for aesthetics and interaction"
+    },
+    {
+      projectTitle: "xsxvcbdcd",
+      projectInfo:
+        "I'm a seasoned frontend developer with a strong sense for aesthetics and interaction"
+    }
+  ],
+
   hobbies: ["dance", "songs"]
 };

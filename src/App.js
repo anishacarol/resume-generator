@@ -8,6 +8,7 @@ import Skills from "./components/Skills/Skills";
 import { data } from "./data/data";
 import "./App.scss";
 import Languages from "./components/Languages/Languages";
+import Portfolio from "./components/Portfolio/Portfolio";
 
 function App() {
   const componentRef = useRef();
@@ -22,16 +23,15 @@ function App() {
           <Header {...data.aboutMe} />
           <main className="data-container">
             <aside className="left-aside">
+              <Summary summary={data.aboutMe.summary} />
               <Experience experiences={data.experiences} />
-              <Education educations={data.educations} />
+              <Portfolio portfolio={data.portfolio} />
             </aside>
             <aside className="right-aside">
-              <Summary summary={data.aboutMe.summary} />
               <Skills skills={data.skills} />
               <Languages languages={data.languages} />
-              {/* 
-              <Heading headingData="PASSIONS" /> */}
-            </aside>{" "}
+              <Education educations={data.educations} />
+            </aside>
           </main>
         </div>
       </div>

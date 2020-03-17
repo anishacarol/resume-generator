@@ -8,9 +8,10 @@ const Language = ({ title, level }) => (
         {[1, 2, 3, 4, 5].map(item => {
           if (item <= level) {
             return (
-              <div className="language" style={{ backgroundColor: "black" }}>
-                {level}
-              </div>
+              <div
+                className="language"
+                style={{ backgroundColor: "black" }}
+              ></div>
             );
           }
           return (
