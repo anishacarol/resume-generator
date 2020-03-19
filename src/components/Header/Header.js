@@ -1,6 +1,11 @@
 import React from "react";
 import IconText from "../IconText/IconText";
 import Summary from "../Summary/Summary";
+import MobileIcon from "../../images/icons/MobileIcon";
+import LocationIcon from "../../images/icons/LocationIcon";
+import EmailIcon from "../../images/icons/EmailIcon";
+import LinkedInIcon from "../../images/icons/LinkedInIcon";
+import GithubIcon from "../../images/icons/GithubIcon";
 
 const Header = ({
   contactNo,
@@ -8,12 +13,13 @@ const Header = ({
   designation,
   location,
   email,
+  linkedIn,
+  github,
   summary
   // profileImgUrl
 }) => {
   return (
     <div className="header-container">
-      {/* <div className="headerText-container"> */}
       <div className="name-designation-container">
         <div className="name-container">
           <h1>{name}</h1>
@@ -24,22 +30,32 @@ const Header = ({
         <Summary summary={summary} />
       </div>
       <div className="contact-info">
-        {/* <div className="contactInfo-left"> */}
         <div>
-          <IconText iconUrl={null} text={contactNo} />
+          <IconText text={contactNo}>
+            <MobileIcon />
+          </IconText>
         </div>
         <div>
-          <IconText iconUrl={null} text={location} />
+          <IconText text={location}>
+            <LocationIcon />
+          </IconText>
         </div>
         <div>
-          <IconText iconUrl={null} text={email} />
+          <IconText text={email}>
+            <EmailIcon />
+          </IconText>
         </div>
-        {/* </div> */}
-        {/* <div className="contactInfo-right">
-           
-          </div> */}
+        <div>
+          <IconText text={linkedIn}>
+            <LinkedInIcon />
+          </IconText>
+        </div>
+        <div>
+          <IconText text={github}>
+            <GithubIcon />
+          </IconText>
+        </div>
       </div>
-      {/* </div> */}
     </div>
   );
 };

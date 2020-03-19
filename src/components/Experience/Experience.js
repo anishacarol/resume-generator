@@ -11,9 +11,7 @@ const Experience = ({ experiences }) => (
           <ProfileItem
             title={item.designation}
             InstiutionName={item.companyName}
-            // calenderIcon={data.calenderIcon}
             date={item.date}
-            locationIcon={item.locationIcon}
             location={item.location}
             subheading={item.subheading}
             roles={item.roles}

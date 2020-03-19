@@ -1,9 +1,9 @@
 import React from "react";
 
-const IconText = ({ iconUrl, text }) => (
+const IconText = ({ text, children }) => (
   <div className="icon-info">
-    <i>{iconUrl}</i>
     <p>{text}</p>
+    <div> {children}</div>
   </div>
 );
 

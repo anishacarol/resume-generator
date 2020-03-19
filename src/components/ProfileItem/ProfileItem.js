@@ -1,7 +1,7 @@
 import React from "react";
 import IconText from "../IconText/IconText";
 
-const InnerData = ({
+const ProfileItem = ({
   title,
   InstiutionName,
   calenderIcon,
@@ -12,14 +12,14 @@ const InnerData = ({
   roles
 }) => {
   return (
-    <div className="innerData-container">
+    <div className="profileItem-container">
       <h3>{title}</h3>
       <h4>{InstiutionName}</h4>
-      <div className="innerData-iconStyle">
+      <div className="profileItem-iconStyle">
         <IconText iconUrl={calenderIcon} text={date} />
         <IconText iconUrl={locationIcon} text={location} />
       </div>
-      <p>{subheading}</p>
+
       {roles && (
         <ul>
           {roles.map(item => (
@@ -31,4 +31,4 @@ const InnerData = ({
   );
 };
 
-export default InnerData;
+export default ProfileItem;
