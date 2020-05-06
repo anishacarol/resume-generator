@@ -32,7 +32,9 @@ const Header = ({
       <div className="contact-info">
         <div>
           <IconText text={contactNo}>
-            <MobileIcon />
+            <div>
+              <MobileIcon />
+            </div>
           </IconText>
         </div>
         <div>
@@ -45,11 +47,13 @@ const Header = ({
             <EmailIcon />
           </IconText>
         </div>
-        <div>
-          <IconText text={linkedIn}>
-            <LinkedInIcon />
-          </IconText>
-        </div>
+        {linkedIn ? (
+          <div>
+            <IconText text={linkedIn}>
+              <LinkedInIcon />
+            </IconText>
+          </div>
+        ) : null}
         <div>
           <IconText text={github}>
             <GithubIcon />

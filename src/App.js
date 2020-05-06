@@ -8,6 +8,7 @@ import { data } from "./data/data";
 import "./App.scss";
 import Languages from "./components/Languages/Languages";
 import Portfolio from "./components/Portfolio/Portfolio";
+import Interests from "./components/Interests/Interests";
 
 function App() {
   const componentRef = useRef();
@@ -23,8 +24,9 @@ function App() {
             </aside>
             <aside className="right-aside">
               <Skills skills={data.skills} />
-              <Languages languages={data.languages} />
               <Education educations={data.educations} />
+              <Languages languages={data.languages} />
+              <Interests interests={data.hobbies} />
             </aside>
           </main>
         </div>

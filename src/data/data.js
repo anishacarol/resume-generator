@@ -5,37 +5,41 @@ export const data = {
     name: "Anisha Carol Dennison",
     profileImgUrl: person,
     designation: "Frontend Developer",
-    contactNo: "+455 457 34556",
+    contactNo: "+49 179 4547636",
     location: "Berlin, Germany",
-    email: "anishajobe@gmail.com",
-    linkedIn: "anishajcarol@linkedin.com",
-    github: "anishajobe@github.com",
+    email: "anishacarol@hotmail.com",
+    // linkedIn: "anishajobe@linkedin.com",
+    github: "github.com/anishacarol",
     summary: `Great development is all about the detail and communication of the developer. Designing and 
     developing is not only my career but also my passion. I have been in software development for about 4
     years and I have gained excellence in areas of Web Development.`
   },
   experiences: [
     {
-      designation: "Frontend developer",
+      designation: "Frontend Developer",
       companyName: "Elsoft Solution",
-      date: "04/2007 - 05/2013",
-      location: "Bangalore",
+      date: "11/2017 - present",
+      // location: "Bangalore, India",
       roles: [
-        "Collaborate with business managers, designers and web developers to improve the user experience.",
-        "Responsible for all stages of web app creations from initial design and architecture to development, deployment, andmanagement of Web sites."
+        "Collaborate with project managers, designers and web developers to improve the user experience.",
+        "Create reusable react components and writing unit testing.",
+        "Responsible for all stages of web app creations from initial design and architecture to development, deployment, and management of Web sites.",
+        "Optimize application for maximum speed and scalability.",
+        "Sharing knowledge among the team and doing code reviews."
       ]
     },
 
     {
-      designation: "Junior Frontend developer",
+      designation: "Web Developer",
       companyName: "Elsoft Solution",
-      date: "04/2007 - 05/2013",
-      location: "Bangalore",
+      date: "06/2016 - 10/2017",
+      // location: "Bangalore, India",
       roles: [
-        "Design and development of a responsive websites.",
+        "Design and development of responsive websites.",
         "Laying out the infrastructure and building core components.",
         "Working along with backend team to integrate restful APIs.",
-        "Writing unit test. Doing code reviews and daily guidance forthe co-workers"
+        "Assure that all user input is validated before submitting to back-end.",
+        "Collaborate with team, writing unit tests and doing code reviews."
       ]
     }
   ],
@@ -44,24 +48,43 @@ export const data = {
       title: "Master of Computer Applications",
       instituteName: "Nesamony memorial christian college",
       accadamicYear: "2010 - 2013",
-      location: "Bangalore"
+      location: "Marthandam, India"
     },
     {
       title: "Bachelor of Computer Science",
       instituteName: "Sathyabama University",
       accadamicYear: "2007 - 2010",
-      location: "Bangalore"
+      location: "Chennai, India"
     }
   ],
 
   skills: [
     {
-      title: "Coding",
-      skill: ["react", "es6", "sass", "hjkhklj", "sscdasc", "dcdacdc"]
+      title: "Frontend",
+      skill: [
+        "javascript",
+        "Es6",
+        "react JS",
+        "redux",
+        "Typescript",
+        "HTML5",
+        "CSS3",
+        "sass",
+        "Styled Components",
+        "Jest",
+        "React testing library",
+        "Webpack",
+        "cypress",
+        "D3.js"
+      ]
     },
     {
       title: "Project management",
-      skill: ["react", "es6", "sass", "nkmkmkm", "dcfdfv"]
+      skill: ["JIRA", "Github", "Trello", "AWS"]
+    },
+    {
+      title: "Backend",
+      skill: ["node.js", "Firebase", "ASP.net "]
     }
   ],
 
@@ -72,26 +95,29 @@ export const data = {
 
   portfolio: [
     {
-      projectTitle: "Clastrac",
+      projectTitle: "Playablo",
       projectInfo:
-        "ClassTrac is a cross-platform app on Android and Web that will help theteachers to assess the students on the basis of CBSE standard, this enterprise application let the teachers produce the CBSE report at theend and allow their students and parents to download from their account."
+        "PlayAblo is a gamified learning and assessment platform for English Grammar, Communicative English and Mathematics. It completely aligns itself with School's lesson plans supporting most boards.",
+      projectLink: "http://www.playablo.com"
     },
     {
-      projectTitle: "Elsoftsolution",
+      projectTitle: "Wootag",
       projectInfo:
-        "Elsoft solution is a business website build in react. URL: https://elsoftsolution.com/"
+        "Wootag is a revolutionary interactive video platform that lets your viewers engage with your brand and make purchases across multiple social media platforms.",
+      projectLink: "http://www.wootag.com"
     },
     {
-      projectTitle: "Emids webportal",
+      projectTitle: "Classtrac",
       projectInfo:
-        "emids Quiz & Presentiona App is an enterprise iOS app that allows aconnected , real time gaming experience for conducting a quiz and topresent the real time presentation online. This can be used duringpresentations or at the end to keep participants focussed and interested. Obviously, the possibilities are endless, we can get creative abouthow/when to use this. The webportal on this app is to setup the quiz andpresentation that will be used in the mobile app."
+        "ClassTrac is a cross-platform app on Android and Web that will help the teachers to assess the students on the basis of CBSE standard, this enterprise application let the teachers produce the CBSE report at theend and allow their students and parents to download from their account."
     },
     {
       projectTitle: "Motoguzzzi",
       projectInfo:
-        "Motguzzi s a front-facing website for Moto Guzzi to showcase their garage. URL: http://www.motoguzzi.com/it_IT/"
+        "Motguzzi s a front-facing website for Moto Guzzi to showcase their garage.",
+      projectLink: "http://www.motoguzzi.com/it_IT/"
     }
   ],
 
-  hobbies: ["dance", "songs"]
+  hobbies: ["Sports", "Music", "Reading"]
 };

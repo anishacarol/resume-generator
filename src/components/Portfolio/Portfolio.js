@@ -11,6 +11,7 @@ const Portfolio = ({ portfolio }) => (
           key={index}
           title={item.projectTitle}
           projectInfo={item.projectInfo}
+          projectLink={item.projectLink}
         />
       ))}
     </div>

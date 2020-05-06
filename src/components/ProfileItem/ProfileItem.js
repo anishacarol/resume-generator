@@ -17,11 +17,11 @@ const ProfileItem = ({
       <h4>{InstiutionName}</h4>
       <div className="profileItem-iconStyle">
         <IconText iconUrl={calenderIcon} text={date} />
-        <IconText iconUrl={locationIcon} text={location} />
+        {location ? <IconText iconUrl={locationIcon} text={location} /> : null}
       </div>
 
       {roles && (
-        <ul>
+        <ul className="roles">
           {roles.map(item => (
             <li key={item}>{item}</li>
           ))}

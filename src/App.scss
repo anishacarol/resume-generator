@@ -1,6 +1,9 @@
+$titleFontSize: 13pt;
+$subTitleFontSize: 11pt;
 * {
   box-sizing: border-box;
 }
+
 .app-container {
   margin-left: 12px;
 }
@@ -21,8 +24,8 @@
   justify-content: space-between;
   align-items: center;
   background-color: #273c3f;
-  color: white;
-  padding: 30px;
+  color: #f5f5f6;
+  padding: 20px 40px;
 }
 .img-container {
   flex: 1;
@@ -41,38 +44,43 @@
     margin-bottom: 0;
     font-size: 22pt;
     margin-top: 0;
+    font-weight: normal;
   }
   p {
     margin-top: 0;
-    text-align: justify;
   }
 }
 .designation {
-  line-height: 10px;
+  line-height: 15px;
   color: rgb(0, 167, 187);
-  font-size: 18px;
+  font-size: 15px;
   margin-bottom: 14px;
 }
 .summary-wrapper {
   p {
-    color: white;
-    font-size: 12px;
+    color: #f1f1f1;
+    font-size: 13px;
     margin-bottom: 0;
+    line-height: 18px;
   }
 }
-
+.language-title {
+  font-size: $subTitleFontSize;
+}
 .icon-info {
   svg {
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 12px;
     object-fit: contain;
-    margin-left: 5px;
+    margin-left: 15px;
   }
   display: flex;
   margin: 0;
   justify-content: flex-end;
   align-items: center;
+  font-size: 13px;
 }
+
 .left-aside {
   flex: 1.5;
   padding-right: 25px;
@@ -96,40 +104,43 @@
 .heading-container {
   display: inline-block;
   h2 {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 0;
     color: rgb(0, 167, 187);
+    padding-bottom: 2px;
+    border-bottom: 2pt solid rgb(0, 167, 187);
   }
-  hr {
-    border: 1.2px solid rgb(0, 167, 187);
-    margin-top: 0;
-    margin-bottom: 0;
-  }
+  // hr {
+  //   border: 1.2px solid rgb(0, 167, 187);
+  //   margin-top: 0;
+  //   margin-bottom: 0;
+  // }
   margin-bottom: 14px;
 }
 
 .profileItem-container {
   h3 {
-    font-size: 13pt;
-    margin-bottom: 0;
+    font-size: $titleFontSize;
+    margin-bottom: 2px;
     margin-top: 0;
   }
   h4 {
-    font-size: 12pt;
+    font-size: $subTitleFontSize;
     margin-bottom: 0;
     margin-top: 0;
-    color: rgb(0, 167, 187);
+    font-weight: 500;
   }
   p {
     margin-bottom: 0;
     margin-top: 0;
+    color: rgb(0, 167, 187);
   }
-  li {
-    list-style-type: disc;
+  .roles {
+    padding-left: 13px;
   }
   li::before {
     content: "\2022";
-    color: red;
+    color: rgb(0, 167, 187);
     font-weight: bold;
     display: inline-block;
     width: 1em;
@@ -137,11 +148,16 @@
   }
   p,
   li {
-    font-size: 10pt;
+    font-size: 13px;
+    margin-bottom: 5px;
+    list-style: none;
+    line-height: 18px;
   }
 }
+
 .profileItem-iconStyle {
   display: flex;
+  justify-content: space-between;
   > div {
     margin-right: 25px;
   }
@@ -150,9 +166,13 @@
   margin-top: 0;
   list-style: none;
   padding-left: 0;
+  margin-bottom: 0;
   > li {
     display: flex;
     margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 .education-container {
@@ -182,7 +202,7 @@
     margin-bottom: 0;
     margin-top: 0;
     color: black;
-    font-size: 20px;
+    font-size: $subTitleFontSize;
   }
   div {
     padding-left: 0;
@@ -195,12 +215,13 @@
   }
 }
 .skill-item {
-  background-color: rgb(0, 167, 187);
-  margin-top: 10px;
+  font-size: 14px;
+  background-color: #00a7bb;
+  margin-top: 12px;
   margin-right: 10px;
-  line-height: 16px;
+  line-height: 14px;
   padding: 5px 8px;
-  border-radius: 3px;
+  border-radius: 4px;
   text-transform: capitalize;
 }
 .language-wrapper {
@@ -212,8 +233,8 @@
 }
 .language {
   border-radius: 50%;
-  height: 17px;
-  width: 17px;
+  height: 15px;
+  width: 15px;
   margin-right: 10px;
 }
 .languages-wrapper {
@@ -223,18 +244,40 @@
     // padding-bottom: 12px;
   }
 }
+.project-wrapper {
+  margin-bottom: 7px;
+}
 .portfolio-wrapper {
   h5 {
     margin-top: 0;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
+    font-size: $subTitleFontSize;
   }
-  p {
-    font-size: 12px;
-    font-style: italic;
+  p,
+  a {
+    font-size: 13px;
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 0;
+    line-height: 17px;
+  }
+  a {
+    color: black;
   }
 }
+.interest-wrapper {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 4px;
+}
+.interest-wrapper li {
+  border: 1px solid #00a7bb;
+  padding: 4px 8px;
+  margin-right: 10px;
+  border-radius: 5px;
+  font-size: $subTitleFontSize;
+}
+
 @media print {
   .data-container {
     margin: 40px;
