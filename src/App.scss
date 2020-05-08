@@ -1,11 +1,9 @@
 $titleFontSize: 13pt;
 $subTitleFontSize: 11pt;
+$primaryColor: rgb(0, 167, 187);
+
 * {
   box-sizing: border-box;
-}
-
-.app-container {
-  margin-left: 12px;
 }
 
 @media print {
@@ -52,7 +50,7 @@ $subTitleFontSize: 11pt;
 }
 .designation {
   line-height: 15px;
-  color: rgb(0, 167, 187);
+  color: $primaryColor;
   font-size: 15px;
   margin-bottom: 14px;
 }
@@ -103,19 +101,15 @@ $subTitleFontSize: 11pt;
 }
 .heading-container {
   display: inline-block;
+  margin-bottom: 14px;
+
   h2 {
     font-size: 18px;
     margin-bottom: 0;
-    color: rgb(0, 167, 187);
+    color: $primaryColor;
     padding-bottom: 2px;
-    border-bottom: 2pt solid rgb(0, 167, 187);
+    border-bottom: 2pt solid $primaryColor;
   }
-  // hr {
-  //   border: 1.2px solid rgb(0, 167, 187);
-  //   margin-top: 0;
-  //   margin-bottom: 0;
-  // }
-  margin-bottom: 14px;
 }
 
 .profileItem-container {
@@ -133,14 +127,14 @@ $subTitleFontSize: 11pt;
   p {
     margin-bottom: 0;
     margin-top: 0;
-    color: rgb(0, 167, 187);
+    color: $primaryColor;
   }
   .roles {
     padding-left: 13px;
   }
   li::before {
     content: "\2022";
-    color: rgb(0, 167, 187);
+    color: $primaryColor;
     font-weight: bold;
     display: inline-block;
     width: 1em;
@@ -167,9 +161,11 @@ $subTitleFontSize: 11pt;
   list-style: none;
   padding-left: 0;
   margin-bottom: 0;
+
   > li {
     display: flex;
     margin-bottom: 15px;
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -177,6 +173,7 @@ $subTitleFontSize: 11pt;
 }
 .education-container {
   margin: 0;
+
   li {
     margin-bottom: 15px;
     list-style: none;
@@ -186,17 +183,17 @@ $subTitleFontSize: 11pt;
 .skills-container {
   padding-left: 0;
 }
-// .skills-wrapper {
-//   margin-bottom: 30px;
-// }
+
 .skills-container {
   margin-top: 0;
   list-style: none;
+
   h4 {
     font-size: 18pt;
-    color: rgb(0, 167, 187);
+    color: $primaryColor;
   }
 }
+
 .skill-container {
   h4 {
     margin-bottom: 0;
@@ -204,16 +201,16 @@ $subTitleFontSize: 11pt;
     color: black;
     font-size: $subTitleFontSize;
   }
+
   div {
     padding-left: 0;
-
     display: flex;
     flex-flow: row wrap;
     margin-bottom: 16px;
-
-    color: white;
+    color: #fff;
   }
 }
+
 .skill-item {
   font-size: 14px;
   background-color: #00a7bb;
@@ -224,35 +221,40 @@ $subTitleFontSize: 11pt;
   border-radius: 4px;
   text-transform: capitalize;
 }
+
 .language-wrapper {
   display: flex;
   justify-content: space-between;
 }
+
 .language-level {
   display: flex;
 }
+
 .language {
   border-radius: 50%;
   height: 15px;
   width: 15px;
   margin-right: 10px;
 }
+
 .languages-wrapper {
-  // margin-top: 20px;
   > div {
     margin-bottom: 10px;
-    // padding-bottom: 12px;
   }
 }
+
 .project-wrapper {
   margin-bottom: 7px;
 }
+
 .portfolio-wrapper {
   h5 {
     margin-top: 0;
     margin-bottom: 4px;
     font-size: $subTitleFontSize;
   }
+
   p,
   a {
     font-size: 13px;
@@ -260,16 +262,19 @@ $subTitleFontSize: 11pt;
     margin-bottom: 0;
     line-height: 17px;
   }
+
   a {
     color: black;
   }
 }
+
 .interest-wrapper {
   display: flex;
   list-style: none;
   padding-left: 0;
   margin-top: 4px;
 }
+
 .interest-wrapper li {
   border: 1px solid #00a7bb;
   padding: 4px 8px;
@@ -283,4 +288,15 @@ $subTitleFontSize: 11pt;
     margin: 40px;
     margin-top: 10px;
   }
+}
+
+.button {
+  position: fixed;
+  top: 40px;
+  left: 50px;
+  border: none;
+  background: green;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 10px;
 }

@@ -6,6 +6,8 @@ body {
   font-family: "Ubuntu", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 800px;
+  margin: 0 auto;
 }
 
 code {

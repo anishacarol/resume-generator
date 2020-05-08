@@ -13,7 +13,7 @@ import Interests from "./components/Interests/Interests";
 function App() {
   const componentRef = useRef();
   return (
-    <div className="app-container">
+    <>
       <div ref={componentRef}>
         <div className="resume-container">
           <Header {...data.aboutMe} />
@@ -32,10 +32,10 @@ function App() {
         </div>
       </div>
       <ReactToPrint
-        trigger={() => <button>Print my resume</button>}
+        trigger={() => <button className="button">Print my resume</button>}
         content={() => componentRef.current}
       ></ReactToPrint>
-    </div>
+    </>
   );
 }
 
